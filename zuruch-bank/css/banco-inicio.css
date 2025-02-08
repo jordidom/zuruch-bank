@@ -1,0 +1,91 @@
+/* Estilos para banco-inicio.css */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1f2029;
+    color: #c4c3ca;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2a2b38;
+    padding: 15px;
+    border-bottom: 2px solid #ffeba7;
+}
+
+.header h1 {
+    color: #ffeba7;
+    font-size: 24px;
+}
+
+.navbar {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    color: #c4c3ca;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #ffeba7;
+}
+
+.section {
+    background-color: #2a2b38;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.section h2 {
+    color: #ffeba7;
+    font-size: 22px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffeba7;
+    color: #102770;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.button:hover {
+    background-color: #102770;
+    color: #ffeba7;
+}
+
+/* Cambiar el color de las celdas de la tabla */
+table th, table td {
+    color: #ffffff; /* Color blanco para las palabras */
+}
+
+/* Cambiar el color de la columna de Descripción */
+table td:nth-child(2) {
+    color: #ffeba7; /* Amarillo para las descripciones */
+}
+
+/* Cambiar el color de la columna de Cantidad */
+table td:nth-child(3) {
+    color: #c4c3ca; /* Gris claro para las cantidades */
+}
