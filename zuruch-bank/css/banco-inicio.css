@@ -42,6 +42,20 @@ body {
     transition: color 0.3s;
 }
 
+.navbar img {
+    position: absolute;
+    top: -5px;
+    left: 0px;
+    height: 72px; /* Ajusta el tamaño según tus necesidades */
+    width: auto; /* Mantiene la proporción de la imagen */
+    margin-right: 10px; /* Espacio entre la imagen y el nombre del banco */
+}
+
+.navbar-brand {
+    position: absolute;
+    left: 70px;
+}
+
 .navbar a:hover {
     color: #ffeba7;
 }
