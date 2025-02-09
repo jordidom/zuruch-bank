@@ -11,9 +11,36 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 900px;
     margin: auto;
     padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Sección de saldo */
+#saldo {
+    text-align: center;
+    padding: 20px;
+    background-color: #19775b;
+    color: white;
+    border-radius: 8px;
+}
+
+/* Historial de operaciones */
+#historial {
+    margin-top: 20px;
+}
+
+/* Botones al tamaño de la tabla */
+.btn-group {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-group .btn {
+    flex: 1;
+    margin: 2px;
 }
 
 .header {
@@ -89,17 +116,65 @@ body {
     color: #ffeba7;
 }
 
-/* Cambiar el color de las celdas de la tabla */
-table th, table td {
-    color: #ffffff; /* Color blanco para las palabras */
+/* Estilos de la tabla */
+.table {
+    width: 100%;
+    text-align: center;
+    background: rgb(175, 199, 127);
 }
 
-/* Cambiar el color de la columna de Descripción */
+.table th {
+    background-color: #343a40;
+    color: white;
+}
+
+.table td {
+    padding: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .btn-group {
+        flex-direction: column;
+    }
+
+    .btn-group .btn {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .table {
+        font-size: 14px;
+    }
+
+    .table td, .table th {
+        padding: 8px;
+    }
+}
+
+/* Mejoras para pantallas muy pequeñas */
+@media (max-width: 480px) {
+    #saldo {
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    .table {
+        font-size: 12px;
+    }
+}
+
+/* 'Cambiar el color de la columna de Descripción'
 table td:nth-child(2) {
-    color: #ffeba7; /* Amarillo para las descripciones */
-}
+    color: #ffeba7; 'Amarillo para las descripciones'
+} */
 
-/* Cambiar el color de la columna de Cantidad */
+/* 'Cambiar el color de la columna de Cantidad'
 table td:nth-child(3) {
-    color: #c4c3ca; /* Gris claro para las cantidades */
-}
+    color: #c4c3ca;  'Gris claro para las cantidades'
+} */
