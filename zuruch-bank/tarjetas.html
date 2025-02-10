@@ -10,9 +10,17 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <img src="img/logo-banco-zuruch.svg" alt="Logo del Banco Zuruch">
-        <a class="navbar-brand" href="banco-inicio.html">Zuruch</a>
-        <div class="collapse navbar-collapse">
+        <a class="navbar-brand" href="banco-inicio.html">
+            <img src="img/logo-banco-zuruch.svg" alt="Logo del Banco Zuruch" height="40">
+            <span>Zuruch</span>
+        </a>
+    
+        <!-- Botón del menú para móviles -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Menú">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item"><a class="nav-link" href="banco-inicio.html">Saldo</a></li>
                 <li class="nav-item"><a class="nav-link" href="transferencias.html">Transferencias</a></li>

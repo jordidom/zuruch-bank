@@ -59,7 +59,10 @@ body {
 
 .navbar {
     display: flex;
-    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: relative; /* Asegura que el navbar tenga contexto */
 }
 
 .navbar a {
@@ -69,18 +72,21 @@ body {
     transition: color 0.3s;
 }
 
-.navbar img {
-    position: absolute;
-    top: -5px;
-    left: 0px;
-    height: 72px; /* Ajusta el tamaño según tus necesidades */
-    width: auto; /* Mantiene la proporción de la imagen */
-    margin-right: 10px; /* Espacio entre la imagen y el nombre del banco */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    position: static; /* Evita que se desplace cuando se expande el menú */
+    padding-left: 0; /* Restablece si usaste la opción 3 */
 }
 
-.navbar-brand {
+.navbar-brand img {
     position: absolute;
-    left: 70px;
+    height: 80px; /* Tamaño adecuado del logo */
+    margin-right: 10px; /* Espaciado entre el logo y el texto */
+}
+
+.navbar-brand span {
+    margin-left: 70px; /* Ajusta este valor según lo que necesites */
 }
 
 .navbar a:hover {
@@ -130,6 +136,28 @@ body {
 
 .table td {
     padding: 10px;
+}
+
+/* Evita que el menú haga que el logo y el nombre bajen */
+@media (max-width: 992px) { 
+    .navbar {
+        flex-wrap: nowrap; /* Evita que los elementos se apilen verticalmente */
+    }
+
+    .navbar-collapse {
+        position: absolute;
+        top: 100%; /* Aparece debajo de la navbar */
+        left: 0;
+        width: 100%;
+        background-color: #343a40; /* Ajusta según el diseño */
+        padding: 10px;
+        z-index: 1000;
+    }
+
+    .navbar-nav {
+        width: 100%;
+        text-align: center;
+    }
 }
 
 /* Responsive Design */

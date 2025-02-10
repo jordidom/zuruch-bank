@@ -1,0 +1,122 @@
+[
+    {
+        "fecha": "05/02/2025",
+        "descripcion": "Ingreso Nómina",
+        "cantidad": "+2,000.00€",
+        "tipo": "ingreso"
+    },
+    {
+        "fecha": "06/02/2025",
+        "descripcion": "Pago Supermercado",
+        "cantidad": "-50.00€",
+        "tipo": "gasto"
+    },
+    {
+        "fecha": "07/02/2025",
+        "descripcion": "Suscripción Netflix",
+        "cantidad": "-15.99€",
+        "tipo": "gasto"
+    },
+    {
+        "fecha": "08/02/2025",
+        "descripcion": "Devolución de Amazon",
+        "cantidad": "+25.00€",
+        "tipo": "ingreso"
+    },
+    {
+        "fecha": "09/02/2025",
+        "descripcion": "Venta de artículos usados",
+        "cantidad": "+80.00€",
+        "tipo": "ingreso"
+    },
+    {
+        "fecha": "10/02/2025",
+        "descripcion": "Cena en restaurante",
+        "cantidad": "-45.50€",
+        "tipo": "gasto"
+    },
+    {
+        "fecha": "11/02/2025",
+        "descripcion": "Recarga de móvil",
+        "cantidad": "-20.00€",
+        "tipo": "gasto"
+    },
+    {
+        "fecha": "12/02/2025",
+        "descripcion": "Bonificación por desempeño",
+        "cantidad": "+300.00€",
+        "tipo": "ingreso"
+    },
+    {
+        "fecha": "13/02/2025",
+        "descripcion": "Compra de ropa",
+        "cantidad": "-75.00€",
+        "tipo": "gasto"
+    },
+    {
+        "fecha": "14/02/2025",
+        "descripcion": "Regalo de cumpleaños",
+        "cantidad": "+50.00€",
+        "tipo": "ingreso"
+    },
+    {
+        "fecha": "15/02/2025",
+        "descripcion": "Pago del gimnasio",
+        "cantidad": "-40.00€",
+        "tipo": "gasto"
+    },
+    {
+        "fecha": "16/02/2025",
+        "descripcion": "Reembolso de viaje",
+        "cantidad": "+150.00€",
+        "tipo": "ingreso"
+    },
+    {
+        "fecha": "17/02/2025",
+        "descripcion": "Compra de videojuego",
+        "cantidad": "-60.00€",
+        "tipo": "gasto"
+    },
+    {
+        "fecha": "18/02/2025",
+        "descripcion": "Freelance - Proyecto Web",
+        "cantidad": "+500.00€",
+        "tipo": "ingreso"
+    },
+    {
+        "fecha": "19/02/2025",
+        "descripcion": "Pago de electricidad",
+        "cantidad": "-85.00€",
+        "tipo": "gasto"
+    },
+    {
+        "fecha": "20/02/2025",
+        "descripcion": "Premio de lotería",
+        "cantidad": "+200.00€",
+        "tipo": "ingreso"
+    },
+    {
+        "fecha": "21/02/2025",
+        "descripcion": "Taxi al aeropuerto",
+        "cantidad": "-35.00€",
+        "tipo": "gasto"
+    },
+    {
+        "fecha": "22/02/2025",
+        "descripcion": "Devolución de impuestos",
+        "cantidad": "+600.00€",
+        "tipo": "ingreso"
+    },
+    {
+        "fecha": "23/02/2025",
+        "descripcion": "Compra de libros",
+        "cantidad": "-30.00€",
+        "tipo": "gasto"
+    },
+    {
+        "fecha": "24/02/2025",
+        "descripcion": "Pago de internet",
+        "cantidad": "-55.00€",
+        "tipo": "gasto"
+    }
+]
