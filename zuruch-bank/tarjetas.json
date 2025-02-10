@@ -1,0 +1,12 @@
+[
+    {
+        "tipo": "Débito",
+        "numero": "1234567812345678",
+        "activa": true
+    },
+    {
+        "tipo": "Crédito",
+        "numero": "8765432187654321",
+        "activa": true
+    }
+]

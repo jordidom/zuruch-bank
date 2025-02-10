@@ -7,6 +7,7 @@
     <link rel="icon" type="image/icon" href="img/favicon/favicon.ico"/>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css'>
     <link rel="stylesheet" href="css/banco-inicio.css">
+    <link rel="stylesheet" href="css/modelo-tarjeta.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -32,14 +33,16 @@
 
     <div class="container mt-5">
         <section id="tarjetas" class="mb-5">
-            <h2>Tarjetas</h2>
-            <p>Tarjeta de débito: **** **** **** 1234</p>
-            <p>Tarjeta de crédito: **** **** **** 5678</p>
-            <button class="btn btn-warning">Solicitar nueva tarjeta</button>
+            <h2>Tarjetas Activas</h2>
+            <div id="lista-tarjetas" class="mb-3">
+                <!-- Tarjetas cargadas dinámicamente -->
+            </div>
+            <button id="solicitar-tarjeta" class="btn btn-success">Solicitar nueva tarjeta</button>
         </section>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="js/tarjetas.js"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>-->
 </body>
 </html>

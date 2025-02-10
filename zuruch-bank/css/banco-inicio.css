@@ -138,6 +138,58 @@ body {
     padding: 10px;
 }
 
+/*Bizum.html*/
+.estrella {
+    font-size: 2rem;
+    cursor: pointer;
+    color: gray;
+    transition: color 0.3s;
+}
+.estrella:hover, .estrella.selected {
+    color: gold;
+}
+
+.banners-container {
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+@media (max-width: 992px) {
+    .banners-container {
+        position: static;
+        width: 100%;
+    }
+}
+
+/* Reemplazar por 2 anteriores
+.banners-container {
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1050;
+}
+
+.banners-container section {
+    font-size: 14px;
+}
+
+@media (max-width: 992px) {
+    .banners-container {
+        position: static;
+        width: 100%;
+    }
+} */
+
+
 /* Evita que el menú haga que el logo y el nombre bajen */
 @media (max-width: 992px) { 
     .navbar {

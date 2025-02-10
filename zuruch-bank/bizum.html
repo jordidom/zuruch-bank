@@ -31,23 +31,70 @@
     </nav>
 
     <div class="container mt-5">
-        <section id="bizum" class="mb-5">
-            <h2>Bizum</h2>
-            <form>
-                <div class="form-group">
-                    <label for="telefono">Teléfono del destinatario</label>
-                    <input type="text" class="form-control" id="telefono" placeholder="Número de teléfono">
+        <!-- Tarjeta Resumen de Movimientos Bizum -->
+        <section id="resumen-bizum" class="mb-5 p-4 bg-light rounded shadow-sm border">
+            <h2 class="text-center text-dark font-weight-bold">Resumen de Movimientos Bizum</h2>
+            <div class="row text-center mt-3">
+                <div class="col-md-4">
+                    <h5 class="font-weight-bold text-secondary">Total Enviado</h5>
+                    <p class="text-danger font-weight-bold h4">120.00€</p>
                 </div>
-                <div class="form-group">
-                    <label for="cantidad-bizum">Cantidad (€)</label>
-                    <input type="number" class="form-control" id="cantidad-bizum" placeholder="0.00">
+                <div class="col-md-4">
+                    <h5 class="font-weight-bold text-secondary">Total Recibido</h5>
+                    <p class="text-success font-weight-bold h4">85.00€</p>
                 </div>
-                <button type="submit" class="btn btn-success">Enviar Bizum</button>
-            </form>
+                <div class="col-md-4">
+                    <h5 class="font-weight-bold text-secondary">Límite Restante</h5>
+                    <p class="text-warning font-weight-bold h4">380.00€ <small class="text-muted">de 500€</small></p>
+                </div>
+            </div>
+        </section>
+
+        <div class="banners-container">
+            <!-- Seguridad y avisos importantes -->
+            <section id="seguridad-avisos" class="p-3 bg-white rounded shadow-sm border">
+                <h5 class="text-dark font-weight-bold">Seguridad</h5>
+                <ul class="list-unstyled mt-2 small">
+                    <li class="mb-1"><strong>⚠ Nunca compartas tus credenciales</strong></li>
+                    <li class="mb-1"><strong>🔒 Activa la autenticación en dos pasos</strong></li>
+                    <li class="mb-1"><strong>📢 Atención a fraudes</strong></li>
+                </ul>
+            </section>
+        
+            <!-- Promociones Exclusivas -->
+            <section id="promociones" class="p-3 bg-light rounded shadow-sm border">
+                <h5 class="text-dark font-weight-bold">Promociones</h5>
+                <ul class="list-unstyled mt-2 small">
+                    <li class="mb-1"><strong>💳 5% de cashback en compras</strong></li>
+                    <li class="mb-1"><strong>🎁 Sorteo de 1.000€ con Bizum</strong></li>
+                    <li class="mb-1"><strong>📈 Mejores condiciones internacionales</strong></li>
+                </ul>
+            </section>
+        </div>
+    
+        <!-- Encuesta o Feedback del Servicio -->
+        <section id="feedback-bizum" class="mb-5 p-4 bg-white rounded shadow-sm border">
+            <h2 class="text-center text-primary">Tu Opinión sobre Bizum</h2>
+            <p class="text-center text-muted">Cuéntanos tu experiencia utilizando Bizum</p>
+            
+            <div class="text-center mb-3">
+                <span class="estrella" data-valor="1">&#9733;</span>
+                <span class="estrella" data-valor="2">&#9733;</span>
+                <span class="estrella" data-valor="3">&#9733;</span>
+                <span class="estrella" data-valor="4">&#9733;</span>
+                <span class="estrella" data-valor="5">&#9733;</span>
+            </div>
+            
+            <div class="form-group">
+                <label for="comentario" class="font-weight-bold">Déjanos tu comentario:</label>
+                <textarea class="form-control" id="comentario" rows="3" placeholder="Escribe aquí tu opinión..."></textarea>
+            </div>
+            <button class="btn btn-primary btn-block font-weight-bold" onclick="enviarFeedback()">Enviar Opinión</button>
         </section>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="js/bizum.js"></script>
 </body>
 </html>
