@@ -1,0 +1,66 @@
+/* Contenedor principal */
+.container {
+    max-width: 800px;
+}
+
+/* Tarjetas */
+.card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+.card:hover {
+    transform: scale(1.02);
+}
+
+/* Estilos de los sliders */
+.custom-range {
+    width: 100%;
+}
+p {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Cuotas y total a pagar */
+h3, h4 {
+    text-align: center;
+    font-weight: bold;
+}
+.text-primary {
+    color: #004080 !important;
+}
+
+/* Formulario */
+form .form-group {
+    margin-bottom: 15px;
+}
+.form-control {
+    border-radius: 8px;
+}
+.btn-primary {
+    background-color: #004080;
+    border: none;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+}
+.btn-primary:hover {
+    background-color: #ffcc00;
+    color: #004080;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding: 15px;
+    }
+    .card {
+        padding: 15px;
+    }
+}
